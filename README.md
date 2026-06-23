@@ -1,1 +1,22 @@
-# python-projects
+# Python Projects
+
+A collection of Python projects created while learning Python.
+
+## Projects
+
+### CLI Calculator
+A command-line calculator supporting:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Input validation
+- Division-by-zero protection
+
+### CLI Weather Checker
+A command-line weather application using the Open-Meteo API.
+
+Features:
+- Current time display
+- Rain condition display
+- Current temperature display
