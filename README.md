@@ -14,6 +14,7 @@ A command-line calculator supporting:
 
 ### Weather Checker/CLI Weather Checker
 A command-line weather application using the Open-Meteo API.
+
 Features:
 - Current time display
 - Rain condition display
@@ -22,6 +23,7 @@ Features:
 
 ### Weather Checker/UI Weather Checker
 A graphical weather application built with Tkinter and the Open-Meteo API.
+
 Features:
 - Button-triggered weather refresh
 - Current time display
