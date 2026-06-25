@@ -2,6 +2,8 @@ import requests
 import tkinter 
 
 window = tkinter.Tk()
+window.configure(bg="#1a1a1a")
+window.iconbitmap("Weather_icon.ico")
 window.title("Weather_Checker")
 
 
@@ -37,17 +39,17 @@ def cli_weatherchecker():
   label_Temp.config(text = f"Current Temperature:{Temp}°C")
   
 
-label_time = tkinter.Label(window, text = f"Current Time: --")
+label_time = tkinter.Label(window, text = f"Current Time: --",bg="#1a1a1a",fg="#ffffff")
 label_time.pack()
 
-label_raincheck = tkinter.Label(window, text = f"Current condition: --")
+label_raincheck = tkinter.Label(window, text = f"Current condition: --",bg="#1a1a1a",fg="#ffffff")
 label_raincheck.pack()  
   
-label_Temp = tkinter.Label(window, text = f"Current Temperature: --°C")
+label_Temp = tkinter.Label(window, text = f"Current Temperature: --°C",bg="#1a1a1a",fg="#ffffff")
 label_Temp.pack()
 
 
-button =  tkinter.Button(window, text = "Check Weather",command=cli_weatherchecker)
+button =  tkinter.Button(window, text = "Check Weather",command=cli_weatherchecker,bg="#1a1a1a",fg="#ffffff")
 
 button.pack()
                          
