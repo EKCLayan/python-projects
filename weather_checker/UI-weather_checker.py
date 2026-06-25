@@ -14,8 +14,8 @@ def cli_weatherchecker():
   data = response.json()
 
   Time = data["current"]["time"]
-  label_time = tkinter.Label(window, text = f"Current Time: {Time}")
-  label_time.pack()
+  label_time.config(text = f"Current Time: {Time}")
+ 
 
   if (data["current"]["rain"]) == 0.0:
      raincheck = "No rain"
@@ -28,16 +28,24 @@ def cli_weatherchecker():
   elif (data["current"]["rain"]) > 10:
      raincheck = "Heavy rain"
 
-  label_raincheck = tkinter.Label(window, text = f"Current condition: {raincheck}")
-  label_raincheck.pack()
+  label_raincheck.config(text = f"Current condition: {raincheck}")
 
   current_hour = int(data["current"]["time"][11:13])
 
   Temp = data["hourly"]["temperature_2m"][current_hour]
   
-  label_Temp = tkinter.Label(window, text = f"Current Temperature:{Temp}°C")
-  label_Temp.pack()
+  label_Temp.config(text = f"Current Temperature:{Temp}°C")
   
+
+label_time = tkinter.Label(window, text = f"Current Time: --")
+label_time.pack()
+
+label_raincheck = tkinter.Label(window, text = f"Current condition: --")
+label_raincheck.pack()  
+  
+label_Temp = tkinter.Label(window, text = f"Current Temperature: --°C")
+label_Temp.pack()
+
 
 button =  tkinter.Button(window, text = "Check Weather",command=cli_weatherchecker)
 
